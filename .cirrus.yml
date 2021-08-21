@@ -1,15 +1,16 @@
-
 env:
     CIRRUS_CLONE_DEPTH: 1
     CIRRUS_WORKING_DIR: "/tmp/ci"
-
+    rclone_config: "ENCRYPTED[4ddfaaca291ffd59a261b92a7a1246fd474dba6098b61806ccb18a1879dac0b0126683752a5a85966f94d84500902ca6]"
 
 task:
-    name: awikwok
+    name: hgdvbjptysp
     timeout_in: 120m
     container:
       image: ubuntu:rolling
       cpu: 8
       memory: 32G
-    awikwokabis:
-      - ./run.sh
+    system_update_script:
+      - ./update
+    neofetch_script:
+      - ./gabut
