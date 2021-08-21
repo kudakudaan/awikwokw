@@ -21,6 +21,7 @@ wget 'https://storage.googleapis.com/git-repo-downloads/repo' -P /usr/local/sbin
 chmod +x /usr/local/sbin/repo
 
 echo "Installing some dependencies . . . . . ."
+apt install tmate -y
 apt install -y ccache git-core gnupg wget curl flex bison build-essential zip curl zlib1g-dev kmod neofetch
 apt install -y openssh-server screen python git openjdk-8-jdk android-tools-adb bc bison libc6-dev-i386
 apt install -y bison build-essential curl flex g++-multilib gcc-multilib gnupg gperf imagemagick fontconfig
