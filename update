@@ -1,9 +1,5 @@
 #!/bin/bash
 
-# set noninteractive installation
-export DEBIAN_FRONTEND=noninteractive
-export LC_ALL=C
-
 echo "Updating System . . ."
 apt update
 apt install sudo
