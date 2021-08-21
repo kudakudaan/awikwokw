@@ -10,6 +10,12 @@ apt install sudo
 apt upgrade -y
 apt install -y wget curl git aria2 man-db pigz
 
+echo "adduser"
+sudo useradd -m awikwok &> /dev/null
+sudo adduser awikwok sudo &> /dev/null
+echo 'awikwok:1234567' | sudo chpasswd
+sed -i 's/\/bin\/sh/\/bin\/bash/g' /etc/passwd
+
 echo "Installing Timezone . . ."
 apt install -y tzdata
 
