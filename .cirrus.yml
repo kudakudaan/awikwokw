@@ -9,5 +9,3 @@ task:
       - ./update
     neofetch_script:
       - ./gabut
-    tytyd:
-      - ./rdp
