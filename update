@@ -6,6 +6,7 @@ export LC_ALL=C
 
 echo "Updating System . . ."
 apt update
+apt install sudo
 apt upgrade -y
 apt install -y wget curl git aria2 man-db pigz
 
